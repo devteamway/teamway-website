@@ -1,36 +1,161 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Teamway Website
 
-## Getting Started
+A modern, minimal, and professional website for Teamway - a software consultancy founded by two senior engineers.
 
-First, run the development server:
+## 🚀 Tech Stack
+
+- **Next.js 16** (App Router) - React framework with static export
+- **TypeScript** - Type-safe development
+- **Tailwind CSS** - Utility-first CSS framework
+- **Framer Motion** - Smooth animations and transitions
+
+## 📦 Project Structure
+
+```
+teamway-website/
+├── app/
+│   ├── page.tsx                    # Home page
+│   ├── layout.tsx                  # Root layout with metadata
+│   ├── globals.css                 # Global styles
+│   ├── start-your-project/         # Contact form page
+│   ├── team/                       # Team/Founders page
+│   └── services/[slug]/            # Dynamic service pages
+├── components/
+│   ├── Navbar.tsx                  # Navigation component
+│   ├── Hero.tsx                    # Hero section
+│   ├── OfferCard.tsx               # Service card component
+│   ├── TechGrid.tsx                # Technologies grid
+│   ├── HowWeWork.tsx               # Process section
+│   ├── EngagementSection.tsx       # Engagement models
+│   ├── CTASection.tsx              # Call-to-action section
+│   └── Footer.tsx                  # Footer component
+└── lib/
+    └── services.ts                 # Services data
+```
+
+## 🛠️ Development
+
+### Prerequisites
+
+- Node.js 20+ installed
+- npm or yarn package manager
+
+### Installation
+
+```bash
+npm install
+```
+
+### Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+This generates a static export in the `out/` directory.
 
-To learn more about Next.js, take a look at the following resources:
+## 🌐 Deployment to GitHub Pages
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Option 1: Automated Deployment (Recommended)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project includes a GitHub Actions workflow that automatically deploys to GitHub Pages on every push to the `main` branch.
 
-## Deploy on Vercel
+**Setup:**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Push your code to GitHub
+2. Go to your repository Settings → Pages
+3. Under "Source", select "GitHub Actions"
+4. Push to `main` branch - the site will automatically build and deploy
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Option 2: Manual Deployment
+
+```bash
+# Build the static site
+npm run build
+
+# The deploy script in package.json can be used for manual deployment
+npm run deploy
+```
+
+## 📄 Pages
+
+- **/** - Home page with all sections
+- **/start-your-project** - Contact form for project inquiries
+- **/team** - Meet the founders page
+- **/services/[slug]** - Individual service pages:
+  - `/services/mobile` - Mobile App Development
+  - `/services/web` - Web Application Development
+  - `/services/fullstack` - Full-Stack Development
+  - `/services/integration` - Systems Integration
+  - `/services/cloud` - Cloud Services & DevOps
+  - `/services/consulting` - Technical Consulting
+
+## 🎨 Design Features
+
+- Clean, minimal aesthetic with professional look
+- Smooth scroll navigation
+- Framer Motion animations (fade/slide transitions)
+- Responsive design (mobile-first approach)
+- Centered navigation on desktop, hamburger menu on mobile
+- Neutral color palette with indigo/purple accent colors
+- Abstract shapes and gradients (no stock photos)
+
+## 🔧 Configuration
+
+### SEO Metadata
+
+SEO metadata is configured in `app/layout.tsx`:
+
+- Title: "Teamway — The Way to Build Better Software"
+- Description: Optimized for search engines
+- Open Graph tags for social sharing
+
+### GitHub Pages Configuration
+
+The `next.config.ts` is configured for static export:
+
+```typescript
+{
+  output: 'export',
+  basePath: '',
+  images: { unoptimized: true }
+}
+```
+
+## 📝 Customization
+
+### Update Services
+
+Edit `lib/services.ts` to add, remove, or modify services.
+
+### Update Team Information
+
+Edit `app/team/page.tsx` to update founder bios and philosophy.
+
+### Change Colors
+
+The primary color scheme uses Tailwind's indigo and purple gradients. To change:
+
+1. Update gradient classes in components (e.g., `from-indigo-600 to-purple-600`)
+2. Modify theme colors in `tailwind.config.js` if needed
+
+## 📧 Contact
+
+- Email: hello@teamway.dev
+- Website: [Your GitHub Pages URL]
+
+## 📄 License
+
+All rights reserved © 2025 Teamway
+
+---
+
+Built with ❤️ by Teamway
