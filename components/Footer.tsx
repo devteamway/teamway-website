@@ -9,7 +9,10 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <div className="text-2xl font-bold tracking-tight mb-4">teamway</div>
+            <div className="flex items-center gap-2 text-2xl font-bold tracking-tight mb-4">
+              <img src="/android-chrome-192x192.png" alt="Teamway" className="w-8 h-8" />
+              <span>teamway</span>
+            </div>
             <p className="text-gray-600 text-sm">
               Elevate your business through Software
             </p>
