@@ -12,7 +12,7 @@ export default function Team() {
       role: "Co-Founder & Senior Software Engineer",
       experience: "12+ years",
       website: "https://dorianmusaj.com",
-      photo: "/photo.jpg",
+      photo: "photo.jpg",
       expertise: [
         "Full-Stack Development",
         "Mobile App Development",
