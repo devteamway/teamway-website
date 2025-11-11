@@ -10,7 +10,11 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 text-2xl font-bold tracking-tight mb-4">
-              <img src="/android-chrome-192x192.png" alt="Teamway" className="w-8 h-8" />
+              <img
+                src="android-chrome-192x192.png"
+                alt="Teamway"
+                className="w-8 h-8"
+              />
               <span>teamway</span>
             </div>
             <p className="text-gray-600 text-sm">
