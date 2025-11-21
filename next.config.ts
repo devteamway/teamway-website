@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
    output: 'export',
-  basePath: '/teamway-website',
+  basePath: '',
   images: { unoptimized: true }
 };
 
