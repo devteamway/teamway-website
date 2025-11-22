@@ -1,8 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 export default function TechGrid() {
+  const [hasLoaded, setHasLoaded] = useState(false);
+
+  useEffect(() => {
+    // Small delay to prevent initial load animation
+    const timer = setTimeout(() => setHasLoaded(true), 100);
+    return () => clearTimeout(timer);
+  }, []);
   const techStacks = [
     {
       title: "Mobile",
@@ -67,10 +75,10 @@ export default function TechGrid() {
           {techStacks.map((stack, index) => (
             <motion.div
               key={stack.title}
-              initial={{ opacity: 0, y: 30 }}
+              initial={hasLoaded ? { opacity: 0, y: 20 } : { opacity: 1, y: 0 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true, margin: "-50px", amount: 0.3 }}
+              transition={{ duration: 0.3, delay: index * 0.03, ease: "easeOut" }}
               className="bg-white p-8 rounded-2xl border border-gray-100 hover:shadow-xl transition-all"
             >
               <div

@@ -36,7 +36,9 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-3xl mb-8"
           >
-            At Teamway, we help you plan, build, and scale digital products — from MVPs in months to enterprise systems — using modern tech and AI-driven efficiency.
+            At Teamway, we help you plan, build, and scale digital products —
+            from MVPs in months to enterprise systems — using modern tech and
+            AI-driven efficiency.
           </motion.p>
 
           <motion.div
@@ -49,15 +51,25 @@ export default function Hero() {
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-indigo-600 rounded-full mt-2 flex-shrink-0" />
                 <div>
-                  <span className="font-semibold text-gray-900">Software Consultancy</span>
-                  <span className="text-gray-600"> — guiding product and architecture decisions</span>
+                  <span className="font-semibold text-gray-900">
+                    Software Consultancy
+                  </span>
+                  <span className="text-gray-600">
+                    {" "}
+                    — guiding product and architecture decisions
+                  </span>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-indigo-600 rounded-full mt-2 flex-shrink-0" />
                 <div>
-                  <span className="font-semibold text-gray-900">Software Development</span>
-                  <span className="text-gray-600"> — web, mobile, backend, cloud, and custom integrations</span>
+                  <span className="font-semibold text-gray-900">
+                    Software Development
+                  </span>
+                  <span className="text-gray-600">
+                    {" "}
+                    — web, mobile, backend, cloud, and custom integrations
+                  </span>
                 </div>
               </div>
             </div>
@@ -79,7 +91,7 @@ export default function Hero() {
               href="/team"
               className="px-8 py-4 bg-white text-gray-900 text-base font-medium rounded-full hover:bg-gray-50 transition-all text-center border border-gray-200 hover:shadow-lg"
             >
-              Meet the Founders
+              Meet Us
             </Link>
           </motion.div>
         </div>
@@ -87,4 +99,3 @@ export default function Hero() {
     </section>
   );
 }
-

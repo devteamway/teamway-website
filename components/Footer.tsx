@@ -27,10 +27,10 @@ export default function Footer() {
             <h4 className="font-semibold text-gray-900 mb-3">Contact</h4>
             <div className="space-y-2 text-sm text-gray-600">
               <a
-                href="mailto:hello@teamway.dev"
+                href="mailto:devteamway@gmail.com"
                 className="block hover:text-indigo-600 transition-colors"
               >
-                hello@teamway.dev
+                devteamway@gmail.com
               </a>
               <a
                 href="tel:+355686284516"
@@ -45,12 +45,36 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-gray-900 mb-3">Locations</h4>
             <div className="space-y-3 text-sm text-gray-600">
-              <div>
+              <div className="flex items-start gap-2">
+                <svg
+                  className="w-4 h-4 text-indigo-600 mt-0.5 flex-shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                    clipRule="evenodd"
+                  />
+                </svg>
                 <p className="font-medium text-gray-700">Tirana, Albania</p>
               </div>
-              <div>
-                <p className="font-medium text-gray-700">Swampscott, MA</p>
-                <p>United States</p>
+              <div className="flex items-start gap-2">
+                <svg
+                  className="w-4 h-4 text-indigo-600 mt-0.5 flex-shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                <div>
+                  <p className="font-medium text-gray-700">Swampscott, MA</p>
+                  <p>United States</p>
+                </div>
               </div>
             </div>
           </div>

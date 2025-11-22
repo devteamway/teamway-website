@@ -96,11 +96,11 @@ export default function Team() {
             </Link>
 
             <h1 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight">
-              Meet the Founders
+              Meet Us
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed mb-16 max-w-3xl">
-              Two senior engineers with a shared vision: building exceptional software
-              that drives real business results.
+              Two senior engineers with a shared vision: building exceptional
+              software that drives real business results.
             </p>
           </motion.div>
 
@@ -142,7 +142,9 @@ export default function Team() {
                     founder.name
                   )}
                 </h3>
-                <p className="text-indigo-600 font-medium mb-2">{founder.role}</p>
+                <p className="text-indigo-600 font-medium mb-2">
+                  {founder.role}
+                </p>
                 <p className="text-gray-600 text-sm mb-6">
                   {founder.experience} of experience
                 </p>
@@ -227,4 +229,3 @@ export default function Team() {
     </div>
   );
 }
-

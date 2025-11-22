@@ -91,8 +91,8 @@ export default function StartYourProject() {
               Start Your Project
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed mb-12">
-              Tell us about your project and we'll get back to you within 24 hours
-              with a clear plan and next steps.
+              Tell us about your project and we'll get back to you within 24
+              hours with a clear plan and next steps.
             </p>
           </motion.div>
 
@@ -291,14 +291,12 @@ export default function StartYourProject() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="mt-12 text-center"
           >
-            <p className="text-gray-600 mb-4">
-              Prefer to email us directly?
-            </p>
+            <p className="text-gray-600 mb-4">Prefer to email us directly?</p>
             <a
-              href="mailto:hello@teamway.dev"
+              href="mailto:devteamway@gmail.com"
               className="text-indigo-600 hover:text-indigo-700 font-medium text-lg"
             >
-              hello@teamway.dev
+              devteamway@gmail.com
             </a>
           </motion.div>
         </div>
@@ -308,4 +306,3 @@ export default function StartYourProject() {
     </div>
   );
 }
-
